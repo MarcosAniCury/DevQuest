@@ -1,6 +1,6 @@
 # DevQuest
 
- Projeto feito no quarto período de ciências da computação
+ Projeto feito no 4° período de ciências da computação
 ## Develops
 
     - Marcos Ani Cury Vinagre Silva
@@ -16,7 +16,7 @@
 
 [Link para a documentação](https://docs.google.com/document/d/18YvcmHMIYrFpvN6m8bnfb5a5IVM3bXRogwnmXwZxb0c/edit?usp=sharing)
 
-[Link para o PDF do documentação](https://github.com/ProfIloRivero/lddm-sexta-1-__dev/blob/main/documentation/Documentation%20-%20DevQuest.pdf)
+[Link para o PDF do documentação](https://github.com/MarcosAniCury/DevQuest/blob/master/documentation/Documentation%20-%20DevQuest.pdf)
 
 ## Código
 
