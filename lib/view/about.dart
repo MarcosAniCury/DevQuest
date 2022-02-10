@@ -21,9 +21,9 @@ class _AboutState extends State<PaginaAbout> {
             Row(
               children: [
                 SizedBox(
-                  width: 130,
+                  width: 150,
                   height: 100,
-                  child: Image.asset("images/logo.png"),
+                  child: Image.asset("images/devQuest_logo.png"),
                 ),
                 Text(
                   "DevQuest, v0.0.1/2021",

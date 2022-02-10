@@ -25,14 +25,14 @@ class _PaginaHomeState extends State<PaginaHome> {
                     height: 200,
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/PaginaHomeDev');
+                        Navigator.pushNamed(context, '/PaginaHomeQuest');
                       },
                       style: ButtonStyle(
                           backgroundColor:
-                              MaterialStateProperty.all<Color>(Colors.red)),
+                              MaterialStateProperty.all<Color>(Colors.black)),
                       child: Center(
                         child: Text(
-                          "Dev",
+                          "Quest",
                           style: TextStyle(fontSize: 80, color: Colors.white),
                         ),
                       ),
@@ -49,16 +49,27 @@ class _PaginaHomeState extends State<PaginaHome> {
                   child: SizedBox(
                     height: 200,
                     child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/PaginaHomeQuest');
-                      },
+                      onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          title: const Text('Em breve'),
+                          content: const Text('Em breve disponivel...'),
+                          actions: <Widget>[
+                            TextButton(
+                              onPressed: () => Navigator.pop(context, 'OK'),
+                              child: const Text('OK'),
+                            ),
+                          ],
+                        ),
+                      ),
                       style: ButtonStyle(
                           backgroundColor:
-                              MaterialStateProperty.all<Color>(Colors.black)),
+                              MaterialStateProperty.all<Color>(Colors.grey)),
                       child: Center(
                         child: Text(
-                          "Quest",
-                          style: TextStyle(fontSize: 80, color: Colors.white),
+                          "Dev",
+                          style:
+                              TextStyle(fontSize: 80, color: Colors.blueGrey),
                         ),
                       ),
                     ),

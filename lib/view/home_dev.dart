@@ -11,8 +11,9 @@ class _PaginaHomeDevState extends State<PaginaHomeDev> {
   List _itens = [];
 
   void _carregarItens() {
-    _itens = [];
+    _itens = []; // puxar do banco
     for (int i = 0; i <= 10; i++) {
+      // i <= _itens.length
       Map<String, dynamic> item = Map();
       item["titulo"] = "Trabalho ${i} cadastrado";
       item["descricao"] = "Descrição da proposta de emprego ${i}";

@@ -1,0 +1,2 @@
+Deve ser feito um sistema aonde vários usuários podem se registrar/logar e selecionar linguagens específicas e exercícios de cada linguagem, Sendo que ao selecionar a tarefa deve-se saber que ela está em progresso, e ao finalizar dizer que está finalizada.
+Alguns administradores teram o mesmo acessos que os usuários porém eles poderam inserir novas linguagens e novos exercícios para cada linguagem.

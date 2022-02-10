@@ -1,11 +1,23 @@
+import 'package:dev_quest/controller/question_controller.dart';
+import 'package:dev_quest/model/permission.dart';
 import 'package:flutter/material.dart';
-import 'paginas/Login.dart';
-import 'paginas/About.dart';
-import 'paginas/Home.dart';
-import 'paginas/HomeDev.dart';
-import 'paginas/HomeQuest.dart';
+import 'view/about.dart';
+import 'view/cadastro.dart';
+import 'view/home.dart';
+import 'view/home_dev.dart';
+import 'view/home_quest.dart';
+import 'view/login.dart';
+import 'view/language.dart';
+import 'view/exercise.dart';
 
-import 'paginas/cadastro.dart';
+import 'db/database_handler.dart';
+
+import 'controller/user_controller.dart';
+import 'controller/language_controller.dart';
+
+import 'model/user.dart';
+import 'model/language.dart';
+import 'model/question.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Dev Quest',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
@@ -33,6 +46,8 @@ class MyApp extends StatelessWidget {
         '/PaginaHomeDev': (context) => const PaginaHomeDev(),
         '/PaginaHomeQuest': (context) => const PaginaHomeQuest(),
         '/PaginaAbout': (context) => const PaginaAbout(),
+        '/PaginaLanguage': (context) => const PaginaLanguage(),
+        '/PaginaExercise': (context) => const PaginaExercise(),
       },
     );
   }
@@ -46,6 +61,17 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  late DatabaseHandler handler;
+
+  @override
+  void initState() {
+    super.initState();
+    // this.handler = DatabaseHandler();
+    // this.handler.initializeDB().whenComplete(() async {
+    //   setState(() {});
+    // });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,9 +83,9 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                width: 300.0,
+                width: 400.0,
                 child: Image.asset(
-                  'images/logo.png',
+                  'images/devQuest_logo.png',
                   fit: BoxFit.values.first,
                 ),
               ),
@@ -67,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50.0,
               ),
               SizedBox(
-                  width: 250.0,
+                  width: 200.0,
                   child: ElevatedButton(
                     style: null,
                     onPressed: () {
@@ -79,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 50.0,
               ),
               SizedBox(
-                  width: 250.0,
+                  width: 200.0,
                   child: ElevatedButton(
                     style: null,
                     onPressed: () {

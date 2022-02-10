@@ -1,16 +1,24 @@
-# dev_quest
+# DevQuest
 
-DevQuest
+ Projeto feito no quarto período de ciências da computação
+## Develops
 
-## Getting Started
+    - Marcos Ani Cury Vinagre Silva
+    - Leticia Americano Lucas
+    - Danniel
+    - Bernardo Ferreira Temponi
 
-This project is a starting point for a Flutter application.
+## Introdução
 
-A few resources to get you started if this is your first Flutter project:
+ Criado durante a matéria de Linguagem de Dispositivos Moveis do quarto período, o trabalho consiste em um aplicativo mobile construído com a linguagem Dart e utilizando as frameworks de Flutter. Dessa forma, possui o objetivo de auxiliar novos desenvolvedores a estudarem diversas linguagens de programação de forma pratica e simples. Assim, melhorando em geral a comunidade de desenvolvedores.
+ 
+## Documentação
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+[Link para a documentação](https://docs.google.com/document/d/18YvcmHMIYrFpvN6m8bnfb5a5IVM3bXRogwnmXwZxb0c/edit?usp=sharing)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Link para o PDF do documentação](https://github.com/ProfIloRivero/lddm-sexta-1-__dev/blob/main/documentation/Documentation%20-%20DevQuest.pdf)
+
+## Código
+
+[Link para a pasta principal do código](https://github.com/MarcosAniCury/DevQuest)
+
